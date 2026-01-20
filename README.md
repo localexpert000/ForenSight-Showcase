@@ -47,12 +47,12 @@ The following diagram illustrates the Hybrid Edge-Cloud connectivity model:
 A look at the production-ready interface:
 
 <div align="center">
-  <img src="assets/screenshots/Screenshot 2026-01-02 145657.png" width="45%" alt="Dashboard Main">
-  <img src="assets/screenshots/Screenshot 2026-01-02 150023.png" width="45%" alt="Live Monitoring">
+  <img src="assets/screenshots/dashboard.png" width="45%" alt="Dashboard Main">
+  <img src="assets/screenshots/live_monitoring.png" width="45%" alt="Live Monitoring">
 </div>
 <div align="center">
-  <img src="assets/screenshots/Screenshot 2026-01-02 150303.png" width="45%" alt="AI Settings">
-  <img src="assets/screenshots/Screenshot 2026-01-02 150046.png" width="45%" alt="Forensic Search">
+  <img src="assets/screenshots/ai_settings.png" width="45%" alt="AI Settings">
+  <img src="assets/screenshots/forensic_search.png" width="45%" alt="Forensic Search">
 </div>
 
 ---
