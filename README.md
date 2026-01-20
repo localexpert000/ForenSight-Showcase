@@ -34,6 +34,29 @@ Built as a Final Year Project for the **Department of Information and Communicat
 
 ---
 
+## 📸 Screenshots & Demo
+
+### 🏗️ System Architecture
+The following diagram illustrates the Hybrid Edge-Cloud connectivity model:
+
+![Architecture Diagram](assets/architecture.jpg)
+
+*Data Flow: Camera ➡️ Local Edge App (AI Processing) ➡️ Encrypted Tunnel ➡️ Web Dashboard*
+
+### 🖥️ User Interface Gallery
+A look at the production-ready interface:
+
+<div align="center">
+  <img src="assets/screenshots/Screenshot 2026-01-02 145657.png" width="45%" alt="Dashboard Main">
+  <img src="assets/screenshots/Screenshot 2026-01-02 150023.png" width="45%" alt="Live Monitoring">
+</div>
+<div align="center">
+  <img src="assets/screenshots/Screenshot 2026-01-02 150303.png" width="45%" alt="AI Settings">
+  <img src="assets/screenshots/Screenshot 2026-01-02 150046.png" width="45%" alt="Forensic Search">
+</div>
+
+---
+
 ## 🚀 Key Features (Verified)
 
 We have verified and implemented over 50 distinct AI modules across 4 categories:
@@ -57,29 +80,6 @@ ForenSight utilizes a **Decentralized 4-Tier Architecture**:
 2.  **Tier 2: Secure Tunnel (CloudFlare)** - Exposes the local API to the web via a secure, zero-trust outbound connection.
 3.  **Tier 3: Central Relay (FastAPI/PostgreSQL)** - Handles User Authentication (OAuth2) and signals routing.
 4.  **Tier 4: Client Portal (React 19)** - A modern SPA for viewing live feeds and alerts from anywhere in the world.
-
-```mermaid
-graph TD
-    subgraph Edge [Local Edge Node (Your Laptop)]
-        Cam[IP Cameras] -->|RTSP| App[Edge App]
-        App -->|Inference| AI[YOLOv8 + InsightFace]
-        App -->|Storage| DB[(SQLite)]
-    end
-
-    subgraph Internet [Secure Cloud Layer]
-        Tunnel[CloudFlare Tunnel]
-        Relay[Central API]
-    end
-
-    subgraph User [Remote Access]
-        Web[React Dashboard]
-        Admin[Admin Panel]
-    end
-
-    App -->|Encrypted HTTPS| Tunnel --> Relay
-    Relay -->|Signals| Web
-    Web -->|Live Stream| Tunnel
-```
 
 ---
 
