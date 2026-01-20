@@ -106,7 +106,8 @@ This repository acts as a **Portfolio Showcase**. The main codebase is strictly 
 
 ## 👨‍💻 Developer & Acknowledgements
 
-**Developed by:** Asad  
+**Main Developer:** Muzammal Hussain  
+**Contributors:** Javeria Shahid, Syeda Zoha Fatima  
 **Department:** Information and Communication Engineering  
 **Specialization:** Cyber Security & Digital Forensics (4th Semester)
 
